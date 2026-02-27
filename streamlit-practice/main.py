@@ -1,9 +1,9 @@
 import streamlit as st
 
-st.title("WaveTec App")
+st.title("Programming Language App")
 st.subheader("Brewed with Streamlit")
 st.text("Welcome to your interactive app!")
-st.write("Chose your options below:")
+select =st.selectbox("Select an option:", ["Python", "C++", "Java", "JavaScript", "Go", "Rust"])
+st.write(f"You selected: {select}, excellent choice!")
 
-
-st.selectbox("Select an option:", ["Kiosk Inspection", "ATM Inspection", "Human Mobility"])
+st.success("Your Programming Language of choice has been recorded.")
