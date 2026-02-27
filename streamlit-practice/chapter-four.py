@@ -23,9 +23,3 @@ name = st.sidebar.text_input("Enter your name:")
 juice = st.sidebar.selectbox("Select your juice:", ["Apple Juice", "Orange Juice", "Grape Juice", "Pineapple Juice"])
 if st.sidebar.button("Submit"):
     st.sidebar.write(f"{name}! Your {juice} is being prepared.")
-
-with st.expander("See the juice preparation process"):
-    st.write("1. Select fresh fruits.")
-    st.write("2. Wash and cut the fruits.")
-    st.write("3. Use a juicer to extract the juice.")
-    st.write("4. Serve chilled and enjoy!")
