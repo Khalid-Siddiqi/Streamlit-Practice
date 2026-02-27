@@ -7,3 +7,5 @@ select =st.selectbox("Select an option:", ["Python", "C++", "Java", "JavaScript"
 st.write(f"You selected: {select}, excellent choice!")
 
 st.success("Your Programming Language of choice has been recorded.")
+# Elements which you can interact with is called widgets
+# Now we will use conditionals
