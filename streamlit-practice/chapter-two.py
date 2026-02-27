@@ -16,3 +16,7 @@ st.write(f"You selected: {frontend_types}, excellent choice!")
 
 frontend_types = st.selectbox("Select A frontend framework:", ["React", "Vue", "Angular"])
 st.write(f"You selected: {frontend_types}, excellent choice!")
+
+experience = st.slider("Select your experience level:", 0, 5, 1)
+
+st.number_input("Enter your years of experience:", min_value=0, max_value=10, value=1)
