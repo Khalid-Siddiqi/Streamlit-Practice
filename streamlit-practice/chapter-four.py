@@ -20,5 +20,6 @@ elif vote2:
     st.success("You voted for Orange Juice!")
 
 name = st.sidebar.text_input("Enter your name:")
-juice = st.sidebar.selectbox("Select your favorite juice:", ["Apple Juice", "Orange Juice", "Grape Juice", "Pineapple Juice"])
-st.sidebar.write(f"Hello, {name}! Your favorite juice is {juice}.")
+juice = st.sidebar.selectbox("Select your juice:", ["Apple Juice", "Orange Juice", "Grape Juice", "Pineapple Juice"])
+if st.sidebar.button("Submit"):
+    st.sidebar.write(f"{name}! Your {juice} is being prepared.")
