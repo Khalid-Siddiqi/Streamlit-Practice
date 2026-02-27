@@ -21,10 +21,9 @@ experience = st.slider("Select your experience level:", 0, 5, 1)
 
 st.number_input("Enter your years of experience:", min_value=0, max_value=10, value=1)
 
-
 name = st.text_input("Enter your name:")
-if st.button("Submit"):
-    st.write(f"Hello, {name}! You have {experience} years of experience.") 
-
 dob = st.date_input("Select your date of birth:")
-st.write(f"Your date of birth is: {dob}")
+
+if st.button("Submit"):
+    st.write(f"Hello, {name}! You have {experience} years of experience.Your date of birth is: {dob}") 
+
